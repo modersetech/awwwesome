@@ -1,7 +1,7 @@
 Learning the skills you need for web design or web development is the first step toward working on the web— but that also means familiarizing yourself with the tools of the trade. That’s why I put together this list of **Awwwesome ** free resources you’ll need for web development, web design, or both.
 
 As you learn, keep this list handy.
- 
+     
 # 🌐 Free Hosting:
 
 ### 🌐 Netlify 
