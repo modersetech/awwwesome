@@ -792,3 +792,6 @@ CodeSandbox is an online code editor and prototyping tool that makes creating an
 StackBlitz is an online IDE where you can create Angular & React projects that are immediately online & shareable via link… in just one click. 😮
 It automatically takes care of installing dependencies, compiling, bundling, and hot reloading as you type.
 **🔗 stackblitz.com**
+- #### ⩥ Glitch
+With working example apps to remix, a code editor to modify them, instant hosting and deployment - anybody can build a web app on Glitch.
+**🔗 glitch.com**
