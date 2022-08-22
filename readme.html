@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>readme</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+  <style>
+    /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+    code[class*="language-"],
+    pre[class*="language-"] {
+      color: #333;
+      background: none;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.4;
+
+      -moz-tab-size: 8;
+      -o-tab-size: 8;
+      tab-size: 8;
+
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+    }
+
+    /* Code blocks */
+    pre[class*="language-"] {
+      padding: .8em;
+      overflow: auto;
+      /* border: 1px solid #ddd; */
+      border-radius: 3px;
+      /* background: #fff; */
+      background: #f5f5f5;
+    }
+
+    /* Inline code */
+    :not(pre)>code[class*="language-"] {
+      padding: .1em;
+      border-radius: .3em;
+      white-space: normal;
+      background: #f5f5f5;
+    }
+
+    .token.comment,
+    .token.blockquote {
+      color: #969896;
+    }
+
+    .token.cdata {
+      color: #183691;
+    }
+
+    .token.doctype,
+    .token.punctuation,
+    .token.variable,
+    .token.macro.property {
+      color: #333;
+    }
+
+    .token.operator,
+    .token.important,
+    .token.keyword,
+    .token.rule,
+    .token.builtin {
+      color: #a71d5d;
+    }
+
+    .token.string,
+    .token.url,
+    .token.regex,
+    .token.attr-value {
+      color: #183691;
+    }
+
+    .token.property,
+    .token.number,
+    .token.boolean,
+    .token.entity,
+    .token.atrule,
+    .token.constant,
+    .token.symbol,
+    .token.command,
+    .token.code {
+      color: #0086b3;
+    }
+
+    .token.tag,
+    .token.selector,
+    .token.prolog {
+      color: #63a35c;
+    }
+
+    .token.function,
+    .token.namespace,
+    .token.pseudo-element,
+    .token.class,
+    .token.class-name,
+    .token.pseudo-class,
+    .token.id,
+    .token.url-reference .token.variable,
+    .token.attr-name {
+      color: #795da3;
+    }
+
+    .token.entity {
+      cursor: help;
+    }
+
+    .token.title,
+    .token.title .token.punctuation {
+      font-weight: bold;
+      color: #1d3e81;
+    }
+
+    .token.list {
+      color: #ed6a43;
+    }
+
+    .token.inserted {
+      background-color: #eaffea;
+      color: #55a532;
+    }
+
+    .token.deleted {
+      background-color: #ffecec;
+      color: #bd2c00;
+    }
+
+    .token.bold {
+      font-weight: bold;
+    }
+
+    .token.italic {
+      font-style: italic;
+    }
+
+
+    /* JSON */
+    .language-json .token.property {
+      color: #183691;
+    }
+
+    .language-markup .token.tag .token.punctuation {
+      color: #333;
+    }
+
+    /* CSS */
+    code.language-css,
+    .language-css .token.function {
+      color: #0086b3;
+    }
+
+    /* YAML */
+    .language-yaml .token.atrule {
+      color: #63a35c;
+    }
+
+    code.language-yaml {
+      color: #183691;
+    }
+
+    /* Ruby */
+    .language-ruby .token.function {
+      color: #333;
+    }
+
+    /* Markdown */
+    .language-markdown .token.url {
+      color: #795da3;
+    }
+
+    /* Makefile */
+    .language-makefile .token.symbol {
+      color: #795da3;
+    }
+
+    .language-makefile .token.variable {
+      color: #183691;
+    }
+
+    .language-makefile .token.builtin {
+      color: #0086b3;
+    }
+
+    /* Bash */
+    .language-bash .token.keyword {
+      color: #0086b3;
+    }
+
+    /* highlight */
+    pre[data-line] {
+      position: relative;
+      padding: 1em 0 1em 3em;
+    }
+
+    pre[data-line] .line-highlight-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      display: block;
+      width: 100%;
+    }
+
+    pre[data-line] .line-highlight {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: inherit 0;
+      margin-top: 1em;
+      background: hsla(24, 20%, 50%, .08);
+      background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+      pointer-events: none;
+      line-height: inherit;
+      white-space: pre;
+    }
+
+    pre[data-line] .line-highlight:before,
+    pre[data-line] .line-highlight[data-end]:after {
+      content: attr(data-start);
+      position: absolute;
+      top: .4em;
+      left: .6em;
+      min-width: 1em;
+      padding: 0 .5em;
+      background-color: hsla(24, 20%, 50%, .4);
+      color: hsl(24, 20%, 95%);
+      font: bold 65%/1.5 sans-serif;
+      text-align: center;
+      vertical-align: .3em;
+      border-radius: 999px;
+      text-shadow: none;
+      box-shadow: 0 1px white;
+    }
+
+    pre[data-line] .line-highlight[data-end]:after {
+      content: attr(data-end);
+      top: auto;
+      bottom: .4em;
+    }
+
+    html body {
+      font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      overflow: initial;
+      box-sizing: border-box;
+      word-wrap: break-word
+    }
+
+    html body>:first-child {
+      margin-top: 0
+    }
+
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
+      line-height: 1.2;
+      margin-top: 1em;
+      margin-bottom: 16px;
+      color: #000
+    }
+
+    html body h1 {
+      font-size: 2.25em;
+      font-weight: 300;
+      padding-bottom: .3em
+    }
+
+    html body h2 {
+      font-size: 1.75em;
+      font-weight: 400;
+      padding-bottom: .3em
+    }
+
+    html body h3 {
+      font-size: 1.5em;
+      font-weight: 500
+    }
+
+    html body h4 {
+      font-size: 1.25em;
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1.1em;
+      font-weight: 600
+    }
+
+    html body h6 {
+      font-size: 1em;
+      font-weight: 600
+    }
+
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5 {
+      font-weight: 600
+    }
+
+    html body h5 {
+      font-size: 1em
+    }
+
+    html body h6 {
+      color: #5c5c5c
+    }
+
+    html body strong {
+      color: #000
+    }
+
+    html body del {
+      color: #5c5c5c
+    }
+
+    html body a:not([href]) {
+      color: inherit;
+      text-decoration: none
+    }
+
+    html body a {
+      color: #08c;
+      text-decoration: none
+    }
+
+    html body a:hover {
+      color: #00a3f5;
+      text-decoration: none
+    }
+
+    html body img {
+      max-width: 100%
+    }
+
+    html body>p {
+      margin-top: 0;
+      margin-bottom: 16px;
+      word-wrap: break-word
+    }
+
+    html body>ul,
+    html body>ol {
+      margin-bottom: 16px
+    }
+
+    html body ul,
+    html body ol {
+      padding-left: 2em
+    }
+
+    html body ul.no-list,
+    html body ol.no-list {
+      padding: 0;
+      list-style-type: none
+    }
+
+    html body ul ul,
+    html body ul ol,
+    html body ol ol,
+    html body ol ul {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body li {
+      margin-bottom: 0
+    }
+
+    html body li.task-list-item {
+      list-style: none
+    }
+
+    html body li>p {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    html body .task-list-item-checkbox {
+      margin: 0 .2em .25em -1.8em;
+      vertical-align: middle
+    }
+
+    html body .task-list-item-checkbox:hover {
+      cursor: pointer
+    }
+
+    html body blockquote {
+      margin: 16px 0;
+      font-size: inherit;
+      padding: 0 15px;
+      color: #5c5c5c;
+      background-color: #f0f0f0;
+      border-left: 4px solid #d6d6d6
+    }
+
+    html body blockquote>:first-child {
+      margin-top: 0
+    }
+
+    html body blockquote>:last-child {
+      margin-bottom: 0
+    }
+
+    html body hr {
+      height: 4px;
+      margin: 32px 0;
+      background-color: #d6d6d6;
+      border: 0 none
+    }
+
+    html body table {
+      margin: 10px 0 15px 0;
+      border-collapse: collapse;
+      border-spacing: 0;
+      display: block;
+      width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all
+    }
+
+    html body table th {
+      font-weight: bold;
+      color: #000
+    }
+
+    html body table td,
+    html body table th {
+      border: 1px solid #d6d6d6;
+      padding: 6px 13px
+    }
+
+    html body dl {
+      padding: 0
+    }
+
+    html body dl dt {
+      padding: 0;
+      margin-top: 16px;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: bold
+    }
+
+    html body dl dd {
+      padding: 0 16px;
+      margin-bottom: 16px
+    }
+
+    html body code {
+      font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+      font-size: .85em !important;
+      color: #000;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+      padding: .2em 0
+    }
+
+    html body code::before,
+    html body code::after {
+      letter-spacing: -0.2em;
+      content: "\00a0"
+    }
+
+    html body pre>code {
+      padding: 0;
+      margin: 0;
+      font-size: .85em !important;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0
+    }
+
+    html body .highlight {
+      margin-bottom: 16px
+    }
+
+    html body .highlight pre,
+    html body pre {
+      padding: 1em;
+      overflow: auto;
+      font-size: .85em !important;
+      line-height: 1.45;
+      border: #d6d6d6;
+      border-radius: 3px
+    }
+
+    html body .highlight pre {
+      margin-bottom: 0;
+      word-break: normal
+    }
+
+    html body pre code,
+    html body pre tt {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0
+    }
+
+    html body pre code:before,
+    html body pre tt:before,
+    html body pre code:after,
+    html body pre tt:after {
+      content: normal
+    }
+
+    html body p,
+    html body blockquote,
+    html body ul,
+    html body ol,
+    html body dl,
+    html body pre {
+      margin-top: 0;
+      margin-bottom: 16px
+    }
+
+    html body kbd {
+      color: #000;
+      border: 1px solid #d6d6d6;
+      border-bottom: 2px solid #c7c7c7;
+      padding: 2px 4px;
+      background-color: #f0f0f0;
+      border-radius: 3px
+    }
+
+    @media print {
+      html body {
+        background-color: #fff
+      }
+
+      html body h1,
+      html body h2,
+      html body h3,
+      html body h4,
+      html body h5,
+      html body h6 {
+        color: #000;
+        page-break-after: avoid
+      }
+
+      html body blockquote {
+        color: #5c5c5c
+      }
+
+      html body pre {
+        page-break-inside: avoid
+      }
+
+      html body table {
+        display: table
+      }
+
+      html body img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%
+      }
+
+      html body pre,
+      html body code {
+        word-wrap: break-word;
+        white-space: pre
+      }
+    }
+
+    .markdown-preview {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box
+    }
+
+    .markdown-preview .pagebreak,
+    .markdown-preview .newpage {
+      page-break-before: always
+    }
+
+    .markdown-preview pre.line-numbers {
+      position: relative;
+      padding-left: 3.8em;
+      counter-reset: linenumber
+    }
+
+    .markdown-preview pre.line-numbers>code {
+      position: relative
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows {
+      position: absolute;
+      pointer-events: none;
+      top: 1em;
+      font-size: 100%;
+      left: 0;
+      width: 3em;
+      letter-spacing: -1px;
+      border-right: 1px solid #999;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows>span {
+      pointer-events: none;
+      display: block;
+      counter-increment: linenumber
+    }
+
+    .markdown-preview pre.line-numbers .line-numbers-rows>span:before {
+      content: counter(linenumber);
+      color: #999;
+      display: block;
+      padding-right: .8em;
+      text-align: right
+    }
+
+    .markdown-preview .mathjax-exps .MathJax_Display {
+      text-align: center !important
+    }
+
+    .markdown-preview:not([for="preview"]) .code-chunk .btn-group {
+      display: none
+    }
+
+    .markdown-preview:not([for="preview"]) .code-chunk .status {
+      display: none
+    }
+
+    .markdown-preview:not([for="preview"]) .code-chunk .output-div {
+      margin-bottom: 16px
+    }
+
+    .scrollbar-style::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .scrollbar-style::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent
+    }
+
+    .scrollbar-style::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(150, 150, 150, 0.66);
+      border: 4px solid rgba(150, 150, 150, 0.66);
+      background-clip: content-box
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]) {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      overflow: auto
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+      position: relative;
+      top: 0
+    }
+
+    @media screen and (min-width:914px) {
+      html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em calc(50% - 457px + 2em)
+      }
+    }
+
+    @media screen and (max-width:914px) {
+      html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em
+      }
+    }
+
+    @media screen and (max-width:450px) {
+      html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        font-size: 14px !important;
+        padding: 1em
+      }
+    }
+
+    @media print {
+      html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+        display: none
+      }
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+      position: fixed;
+      bottom: 8px;
+      left: 8px;
+      font-size: 28px;
+      cursor: pointer;
+      color: inherit;
+      z-index: 99;
+      width: 32px;
+      text-align: center;
+      opacity: .4
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
+      opacity: 1
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100%;
+      padding: 32px 0 48px 0;
+      font-size: 14px;
+      box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+      box-sizing: border-box;
+      overflow: auto;
+      background-color: inherit
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
+      width: 8px
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(150, 150, 150, 0.66);
+      border: 4px solid rgba(150, 150, 150, 0.66);
+      background-clip: content-box
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
+      text-decoration: none
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+      padding: 0 1.6em;
+      margin-top: .8em
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li {
+      margin-bottom: .8em
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+      list-style-type: none
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+      left: 300px;
+      width: calc(100% - 300px);
+      padding: 2em calc(50% - 457px - 150px);
+      margin: 0;
+      box-sizing: border-box
+    }
+
+    @media screen and (max-width:1274px) {
+      html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+        padding: 2em
+      }
+    }
+
+    @media screen and (max-width:450px) {
+      html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+        width: 100%
+      }
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
+      display: none
+    }
+
+    /* Please visit the URL below for more information: */
+    /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+  </style>
+</head>
+
+<body for="html-export">
+  <div class="mume markdown-preview  ">
+    <h1 class="mume-header" id="awwwesome-list-of-web-development-resources">Awwwesome list of web development resources
+      &#x1F4A5;</h1>
+
+    <p>Learning the skills you need for web design or web development is the first step toward working on the
+      web&#x2014; but that also means familiarizing yourself with the tools of the trade. That&#x2019;s why I put
+      together this list of<strong>Awwwesome</strong>free resources you&#x2019;ll need for web development, web design,
+      or both.</p>
+    <p>As you learn, keep this list handy.</p>
+    <h2 class="mume-header" id="contents">Contents</h2>
+
+    <ul>
+      <li><a href="#-free-hosting">&#x1F310; Free Hostings</a></li>
+      <li><a href="#-learning-platforms">&#x1F4D5; Learning Platforms</a></li>
+      <li><a href="#-coding-challenge-platforms">&#x1F468;&#x200D;&#x1F4BB; Coding Challenge Platforms</a></li>
+      <li><a href="#-freelanicing-platforms">&#x1F468;&#x200D;&#x1F393; Freelancing platforms</a></li>
+      <li><a href="#-list-of-websites-to-find-remote-jobs">&#x1F4CC; List of websites to find remote jobs</a></li>
+      <li><a href="#-photos">&#x1F3DE; Photos</a></li>
+      <li><a href="#-illustrations">&#x1F308; Illustrations</a></li>
+      <li><a href="#-icons">&#x1F520; Icons</a></li>
+      <li><a href="#-fonts">&#x270D;&#xFE0F; Fonts</a></li>
+      <li><a href="#-youtube-channels">&#x25B6; Youtube Channels</a></li>
+      <li><a href="#-podcasts">&#x1F399; Podcasts</a></li>
+      <li><a href="#-code-editors">&#x1F680; Code Editors</a></li>
+      <li><a href="#-color-palettes">&#x1F3A8; Color Palettes</a></li>
+      <li><a href="#-ui-inspiration">&#x2747; UI Inspiration</a></li>
+      <li><a href="#-docs">&#x1F4D4; Docs</a></li>
+      <li><a href="#-animation-libraries">&#x1F4AB; Animation Libraries</a></li>
+      <li><a href="#-charts--data-visualization">&#x1F4CA; Charts / Data Visualization</a></li>
+      <li><a href="#-chrome-extensions">&#x2699; Chrome Extensions</a></li>
+      <li><a href="#-website-optimization-tools">&#x26A1; Website Optimization Tools</a></li>
+      <li><a href="#-code-playground">&#x1F3DF; Code Playground</a></li>
+      <li><a href="contribution.md">&#x1F4A0;Contribute to this repository</a></li>
+    </ul>
+    <h2 class="mume-header" id="free-hosting">&#x1F310; Free Hosting:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Netlify</h4>
+      </li>
+    </ul>
+    <p>Develop &amp; deploy the best web experiences in record time<br>
+      A powerful serverless platform with an intuitive git-based workflow. Automated deployments, shareable previews,
+      and much more. Get started for free!</p>
+    <p><strong>&#x1F517; <a href="https://netlify.com">Netlify</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Firebase</h4>
+      </li>
+    </ul>
+    <p>Firebase is Google&apos;s mobile platform that helps you quickly develop high-quality apps and grow your
+      business.</p>
+    <p><strong>&#x1F517; <a href="http://firebase.google.com">Firebase</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Amazon Web Services (AWS)</h4>
+      </li>
+    </ul>
+    <p>Whether you&apos;re looking for computing power, database storage, content delivery, or other functionality, AWS
+      has the services to help you build sophisticated applications with increased flexibility, scalability, and
+      reliability.</p>
+    <p><strong>&#x1F517; <a href="https://aws.amazon.com">Amazon Web Services</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Heroku</h4>
+      </li>
+    </ul>
+    <p>Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely
+      in the cloud.</p>
+    <p><strong>&#x1F517; <a href="https://heroku.com">Heroku</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; GitHub Pages</h4>
+      </li>
+    </ul>
+    <p>Websites for you and your projects are hosted directly from your GitHub repository. Just edit, push, and your
+      changes are live.</p>
+    <p><strong>&#x1F517; <a href="https://pages.github.com">GitHub Pages</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Vercel</h4>
+      </li>
+    </ul>
+    <p>Deploy web projects with the best front-end developer experience and highest end-user performance.</p>
+    <p><strong>&#x1F517; <a href="http://vercel.com">Vercel</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Surge</h4>
+      </li>
+    </ul>
+    <p>Static web publishing for Front-End Developers. Simple, single-command web publishing. Publish HTML, CSS, and JS
+      for free, without leaving the command line.</p>
+    <p><strong>&#x1F517; <a href="https://surge.sh/">Surge</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Render</h4>
+      </li>
+    </ul>
+    <p>Render is a unified cloud to build and run all your apps and websites with free TLS certificates, global CDN,
+      private networks and auto deploy from Git.</p>
+    <p><strong>&#x1F517; <a href="https://render.com">Render</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; GitLab Pages | GitLab</h4>
+      </li>
+    </ul>
+    <p>Learn how to use GitLab Pages to deploy a static website at no additional cost.</p>
+    <p><strong>&#x1F517; <a href="https://docs.gitlab.com/ee/user/project/pages">GitLab Pages</a></strong></p>
+    <h2 class="mume-header" id="learning-platforms">&#x1F4D5; Learning Platforms:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; freeCodeCamp</h4>
+      </li>
+    </ul>
+    <p>freeCodeCamp is a community of millions of people around the world who are learning to code together. You can
+      learn to code with free online courses, programming projects, and interview preparation for developer jobs.</p>
+    <p><strong>&#x1F517; <a href="https://www.freecodecamp.org/">freeCodeCamp</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Codecademy</h4>
+      </li>
+    </ul>
+    <p>Learn the technical skills to get the job you want. Join over 50 million people choosing Codecademy to start a
+      new career (or advance in their current one).</p>
+    <p><strong>&#x1F517; <a href="https://codecademy.com">Codecademy</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; JavaScript 30</h4>
+      </li>
+    </ul>
+    <p>Build 30 things with vanilla JS in 30 days with 30 tutorials</p>
+    <p><strong>&#x1F517; <a href="http://javascript30.com"></a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Frontend Mentor | Front-end coding challenges using a real-life workflow</h4>
+      </li>
+    </ul>
+    <p>Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges
+      whilst working with professional designs.</p>
+    <p><strong>&#x1F517; <a href="http://frontendmentor.io">FrontendMentor</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Test Automation University | Applitools</h4>
+      </li>
+    </ul>
+    <p>Become a test automation superstar - Free!&#x1F31F;</p>
+    <p><strong>&#x1F517; <a href="http://testautomationu.applitools.com">Test Automation University |
+          Applitools</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Coursera | Online Courses &amp; Credentials From Top Educators. Join for Free</h4>
+      </li>
+    </ul>
+    <p>Start, switch, or advance your career with more than 5,000 courses, Professional Certificates, and degrees from
+      world-class universities and companies.</p>
+    <p><strong>&#x1F517; <a href="https://coursera.org">Coursera</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Khan Academy | Free Online Courses, Lessons &amp; Practice</h4>
+      </li>
+    </ul>
+    <p>Khan Academy offers practice exercises, instructional videos, and a personalized learning dashboard that empower
+      learners to study at their own pace in and outside of the classroom. We tackle math, science, computing, history,
+      art history, economics, and more, including K-14 and test preparation (SAT, Praxis, LSAT) content. We focus on
+      skill mastery to help learners establish strong foundations, so there&apos;s no limit to what they can learn next!
+    </p>
+    <p><strong>&#x1F517; <a href="https://khanacademy.org">Khan Academy</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Sololearn: Learn to Code</h4>
+      </li>
+    </ul>
+    <p>SoloLearn apps provide you with the ability to choose what you will learn without the constraints of following
+      existing curricula. They also let you learn wherever you happen to be, whether at home, in a caf&#xE9;, or even on
+      a bus or a train.</p>
+    <p><strong>&#x1F517; <a href="http://sololearn.com">Sololearn</a></strong></p>
+    <h2 class="mume-header" id="coding-challenge-platforms">&#x1F468;&#x200D;&#x1F4BB; Coding Challenge Platforms:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Codewars - Achieve mastery through coding practice and developer mentorship</h4>
+      </li>
+    </ul>
+    <p>Coding practice for all programming levels &#x2013; Join a community of over 3 million developers and improve
+      your coding skills in over 55 programming languages!</p>
+    <p><strong>&#x1F517; <a href="http://codewars.com">Codewars</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Topcoder</h4>
+      </li>
+    </ul>
+    <p>Topcoder (formerly TopCoder) is a crowdsourcing company with an open global community of designers, developers,
+      data scientists, and competitive programmers.</p>
+    <p><strong>&#x1F517; <a href="https://topcoder.com">Topcoder</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; CodingGames and Programming Challenges to Code Better</h4>
+      </li>
+    </ul>
+    <p>CodinGame is a challenge-based training platform for programmers where you can play with the hottest programming
+      topics. Solve games, code AI bots, learn from your peers, and have fun.</p>
+    <p><strong>&#x1F517; <a href="http://codingame.com">CodinGame</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; HackerRank</h4>
+      </li>
+    </ul>
+    <p>HackerRank is the market-leading technical assessment and remote interview solution for hiring developers. Learn
+      how to hire technical talent from anywhere!</p>
+    <p><strong>&#x1F517; <a href="https://hackerrank.com">HackerRank</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Project Euler</h4>
+      </li>
+    </ul>
+    <p>Project Euler is a series of challenging mathematical/computer programming problems that will require more than
+      just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods,
+      the use of a computer and programming skills will be required to solve most problems.</p>
+    <p><strong>&#x1F517; <a href="https://projecteuler.net/">Project Euler</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Coderbyte</h4>
+      </li>
+    </ul>
+    <p>The industry&#x2019;s #1 website for technical interview prep, coding challenges, and expert videos.</p>
+    <p><strong>&#x1F517; <a href="https://coderbyte.com/">Coderbyte</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; CodeChef</h4>
+      </li>
+    </ul>
+    <p>CodeChef promotes constant learning and friendly programming competitions for its users, along with the support
+      of its large community of problem curators.</p>
+    <p><strong>&#x1F517; <a href="http://codechef.com">CodeChef</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Exercism</h4>
+      </li>
+    </ul>
+    <p>Learn, practice, and get world-class mentoring in over 50 languages. Solve coding exercises and get mentored to
+      gain true fluency in your chosen programming languages. Exercism is open-source and not-for-profit.</p>
+    <p><strong>&#x1F517; <a href="http://exercism.io">Exercism</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; LeetCode - The World&apos;s Leading Online Programming Learning Platform</h4>
+      </li>
+    </ul>
+    <p>Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get
+      prepared for your next interview.</p>
+    <p><strong>&#x1F517; <a href="https://leetcode.com">LeetCode</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; SPOJ</h4>
+      </li>
+    </ul>
+    <p>The SPOJ platform is centered around an online judge system, which serves for the automatic assessment of
+      user-submitted programs. Some of its most important features include: support for more than 45 programming
+      languages and compilers, including C, C++, Pascal, JAVA, C#, Perl, Python, Ruby, Haskell, Ocaml, and esoteric
+      languages.</p>
+    <p><strong>&#x1F517; <a href="http://spoj.com">SPOJ</a></strong></p>
+    <h2 class="mume-header" id="freelancing-platforms">&#x1F468;&#x200D;&#x1F393; Freelancing platforms:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Toptal</h4>
+      </li>
+    </ul>
+    <p>Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product
+      managers, and project managers in the world. Top companies hire Toptal freelancers for their most important
+      projects.</p>
+    <p><strong>&#x1F517; <a href="http://toptal.com">Toptal</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Upwork</h4>
+      </li>
+    </ul>
+    <p>Upwork connects businesses with independent professionals and agencies around the globe. Where companies and
+      freelancers work together in new ways that unlock their potential.</p>
+    <p><strong>&#x1F517; <a href="https://www.upwork.com/">Upwork</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Freelancers</h4>
+      </li>
+    </ul>
+    <p>Find &amp; hire top freelancers, web developers &amp; designers inexpensively. World&apos;s largest marketplace
+      of 50m. Receive quotes in seconds. Post your job online now.</p>
+    <p><strong>&#x1F517; <a href="http://freelancer.com">Freelancers</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; People Per Hour</h4>
+      </li>
+    </ul>
+    <p>Access global talent on the freelancer website trusted by over 1 million businesses worldwide.</p>
+    <p><strong>&#x1F517; <a href="https://www.peopleperhour.com/"> People Per Hour</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; SimplyHired</h4>
+      </li>
+    </ul>
+    <p>Browse SimplyHired for jobs, view local and national salary information, discover companies, and learn about the
+      job market in a specific city.</p>
+    <p><strong>&#x1F517; <a href="https://www.simplyhired.com/">SimplyHired</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Envato - Top digital assets and services</h4>
+      </li>
+    </ul>
+    <p>Join millions and bring your ideas and projects to life with Envato - the world&#x2019;s leading marketplace and
+      community for creative assets and creative people.</p>
+    <p><strong>&#x1F517; <a href="http://envato.com">Envato</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Guru - Hire Freelancers Online and Find Freelance Jobs Online</h4>
+      </li>
+    </ul>
+    <p>Guru is one of the best freelance websites to find &amp; hire Freelancers online and get work done. Freelancers
+      can also search jobs for freelance work and get hired.</p>
+    <p><strong>&#x1F517; <a href="http://guru.com">Guru</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Fiverr - Freelance Services Marketplace for Businesses</h4>
+      </li>
+    </ul>
+    <p>Fiverr&apos;s mission is to change how the world works together. Fiverr connects businesses with freelancers
+      offering digital services in 500+ categories.</p>
+    <p><strong>&#x1F517; <a href="http://fiverr.com">Fiverr</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Hireable</h4>
+      </li>
+    </ul>
+    <p>Your job is our job. Visit Hireable today and search for thousands of jobs in your area.</p>
+    <p><strong>&#x1F517; <a href="http://hireable.com">Hireable</a></strong></p>
+    <h2 class="mume-header" id="list-of-websites-to-find-remote-jobs">&#x1F4CC; List of websites to find remote jobs:
+    </h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; FlexJobs: The Best Remote Jobs, Work from Home Jobs &amp; More</h4>
+      </li>
+    </ul>
+    <p>The #1 job search site for hand-screened flexible and remote jobs (work-from-home jobs) since 2007. Plus get
+      resume, coaching, and career help. Join today!</p>
+    <p><strong>&#x1F517; <a href="http://flexjobs.com">FlexJobs</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Remote Jobs</h4>
+      </li>
+    </ul>
+    <p>Looking for a remote job as a developer, customer service rep, recruiter, designer, or sales professional? Browse
+      openings in those categories and more below. We hand curate this list to showcase the best remote job
+      opportunities in the most recruited job categories. Find a remote job here to launch your work anywhere career.
+    </p>
+    <p><strong>&#x1F517; <a href="http://remote.co/remote-jobs">Remote Jobs</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; JustRemote</h4>
+      </li>
+    </ul>
+    <p>Discover Remote Jobs from around the world. Give up the commute, work remotely and do what you love, daily, from
+      anywhere. Find your perfect remote development, design, sales, or marketing job today.</p>
+    <p><strong>&#x1F517; <a href="http://justremote.co">JustRemote</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; We Work Remotely</h4>
+      </li>
+    </ul>
+    <p>We Work Remotely is the largest remote work community in the world. With over 3M visitors, WWR is the number one
+      destination to find and list incredible remote jobs.</p>
+    <p><strong>&#x1F517; <a href="https://weworkremotely.com/">We Work Remotely</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; RemoteOk</h4>
+      </li>
+    </ul>
+    <p>Remote Jobs in Programming, Design, Sales, and more #OpenSalaries in August 2022<br>
+      Looking for a remote job? Remote OK&#xAE; is the #1 Remote Job Board and has 50,927+ remote jobs as a Developer,
+      Designer, Copywriter, Customer Support Rep, Sales Professional, Project Manager, and more!</p>
+    <p><strong>&#x1F517; <a href="http://remoteok.io">RemoteOk</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Jobspresso</h4>
+      </li>
+    </ul>
+    <p>Jobspresso is the easiest way to find high-quality remote jobs in tech, marketing, customer support, and more.
+      100% of our jobs are hand-picked, manually reviewed, and expertly curated.</p>
+    <p><strong>&#x1F517; <a href="http://jobspresso.co">Jobspresso</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; EU REMOTE JOBS</h4>
+      </li>
+    </ul>
+    <p>Remote jobs in Europe, the Middle East &amp; Africa time zones.<br>
+      With the best remote companies in the world</p>
+    <p><strong>&#x1F517; <a href="https://euremotejobs.com/"> EU REMOTE JOBS</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; RemoteHub</h4>
+      </li>
+    </ul>
+    <p>Find jobs on RemoteHub, the global workplace, and the professional community.</p>
+    <p><strong>&#x1F517; <a href="https://www.remotehub.com/jobs">RemoteHub</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; 6nomads for Engineers</h4>
+      </li>
+    </ul>
+    <p>Find a full-time remote job in a tech company.</p>
+    <p><strong>&#x1F517; [6nomads(<a href="http://6nomads.com">http://6nomads.com</a>)</strong></p>
+    <h2 class="mume-header" id="photos">&#x1F3DE; Photos:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Unsplash</h4>
+      </li>
+    </ul>
+    <p>Beautiful, free images and photos that you can download and use for any project. Better than any royalty-free or
+      stock photos.</p>
+    <p><strong>&#x1F517; <a href="https://unsplash.com">Unsplash</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Pixabay</h4>
+      </li>
+    </ul>
+    <p>Find your perfect free image or video to download and use for anything. &#x2713; Free for commercial use &#x2713;
+      No attribution required &#x2713; High-quality images.</p>
+    <p><strong>&#x1F517; <a href="https://pixabay.com/">Pixabay</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Pexels</h4>
+      </li>
+    </ul>
+    <p>Free stock photos &amp; videos you can use everywhere. Browse millions of high-quality royalty-free stock images
+      &amp; copyright-free pictures. No attribution is required.</p>
+    <p><strong>&#x1F517; <a href="https://www.pexels.com/">Pexels</a></strong></p>
+    <h2 class="mume-header" id="illustrations">&#x1F308; Illustrations:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; unDraw</h4>
+      </li>
+    </ul>
+    <p>The design project with open-source illustrations for any idea you can imagine and create. Create beautiful
+      websites, products, and applications with your color, for free.</p>
+    <p><strong>&#x1F517; <a href="https://undraw.co/illustrations">unDraw</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; DrawKit - Beautiful vector illustrations</h4>
+      </li>
+    </ul>
+    <p>Free and premium vector SVG illustrations for you to use on your next project, no attribution required! Vector
+      illustrations, packs, icons, and more.</p>
+    <p><strong>&#x1F517; <a href="http://drawkit.io">DrawKit</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Ouch</h4>
+      </li>
+    </ul>
+    <p>If you&apos;re like most designers and marketers, you search for illustrations in Google Images or on some stock
+      image website. With us, you get trendier, more professional, and better-matching illustrations that enhance your
+      projects and bring visual harmony into the world.</p>
+    <p><strong>&#x1F517; <a href="https://icons8.com/illustrations">Ouch</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; IRA Design by Creative Tim</h4>
+      </li>
+    </ul>
+    <p>Build your own amazing illustrations.</p>
+    <p><strong>&#x1F517; <a href="http://iradesign.io">IRA Design</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Interfacer</h4>
+      </li>
+    </ul>
+    <p>300+ free design resources. Interfacer is a collection of high-quality free Design Resources created by the most
+      talented and awesome people on the Internet. You can use all of them in commercial projects.</p>
+    <p><strong>&#x1F517; <a href="http://interfacer.xyz">Interfacer</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Blush: Illustrations for everyone</h4>
+      </li>
+    </ul>
+    <p>Blush makes it easy to add free illustrations to your designs. Play with fully customizable graphics made by
+      artists across the globe.</p>
+    <p><strong>&#x1F517; <a href="http://blush.design">Blush</a></strong></p>
+    <h2 class="mume-header" id="icons">&#x1F520; Icons:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Font Awesome</h4>
+      </li>
+    </ul>
+    <p>Font Awesome is the Internet&apos;s icon library and toolkit, used by millions of designers, developers, and
+      content creators. The world&#x2019;s most popular and easiest-to-use icon set just got an upgrade. More icons.
+      More styles. More Options.</p>
+    <p><strong>&#x1F517; <a href="https://fontawesome.com">Font Awesome</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Flaticon</h4>
+      </li>
+    </ul>
+    <p>Free Icons and Stickers - Millions of resources to download<br>
+      Download Free Icons and Stickers for your projects. Resources made by and for designers. PNG, SVG, EPS, PSD, and
+      CSS formats</p>
+    <p><strong>&#x1F517; <a href="http://flaticon.com">Flaticon</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; ICONS8</h4>
+      </li>
+    </ul>
+    <p>Download design elements for free: icons, photos, vector illustrations, and music for your videos. All the assets
+      made by designers &#x2192; consistent quality &#x26A1;&#xFE0F;</p>
+    <p><strong>&#x1F517; <a href="https://icons8.com/">ICONS8</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Material Symbols and Icons - Google Fonts</h4>
+      </li>
+    </ul>
+    <p>Material Symbols are our newest icons consolidating over 2,500 glyphs in a single font file with a wide range of
+      design variants.</p>
+    <p><strong>&#x1F517; <a href="http://material.io/resources/icons">Material Icons</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; iconmonstr</h4>
+      </li>
+    </ul>
+    <p>Free simple icons for your next project</p>
+    <p><strong>&#x1F517; <a href="https://iconmonstr.com/">iconmonstr</a></strong></p>
+    <h2 class="mume-header" id="%EF%B8%8F-fonts">&#x270D;&#xFE0F; Fonts:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Google Fonts</h4>
+      </li>
+    </ul>
+    <p>Making the web more beautiful, fast, and open through great typography</p>
+    <p><strong>&#x1F517; <a href="http://fonts.google.com">Google Fonts</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; FontSpace</h4>
+      </li>
+    </ul>
+    <p>Free downloads of legally licensed fonts that are perfect for your design projects. The best place in the
+      universe to search for amazing fonts.</p>
+    <p><strong>&#x1F517; <a href="https://www.fontspace.com/">fontspace.com</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; 1001 Fonts &#x2764; Free Fonts Baby!</h4>
+      </li>
+    </ul>
+    <p>39509 free fonts in 21894 families &#xB7; Free licenses for commercial use &#xB7; Direct font downloads &#xB7;
+      Mac &#xB7; Windows &#xB7; Linux</p>
+    <p><strong>&#x1F517; <a href="https://www.1001fonts.com/">1001 Fonts</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Font Squirrel</h4>
+      </li>
+    </ul>
+    <p>Free Fonts! Legit Free &amp; Quality &#xBB; Font Squirrel<br>
+      Handpicked free fonts for graphic designers with commercial-use licenses.</p>
+    <p><strong>&#x1F517; <a href="http://fontsquirrel.com">Font Squirrel</a></strong></p>
+    <h2 class="mume-header" id="youtube-channels">&#x25B6; Youtube Channels:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Traversy Media</h4>
+      </li>
+    </ul>
+    <p>Traversy Media features the best online web development and programming tutorials for all of the latest web
+      technologies from the building blocks of HTML, CSS &amp; JavaScript to frontend frameworks like React and Vue to
+      backend technologies like Node.js, Python, and PHP</p>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/c/TraversyMedia/about">Traversy Media</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; FreeCodeCamp</h4>
+      </li>
+    </ul>
+    <p>freeCodeCamp is a nonprofit community that helps millions of people learn to code 100% for free helping thousands
+      of people find their first coding job</p>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/c/Freecodecamp/videos">FreeCodeCamp</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; The Net Ninja</h4>
+      </li>
+    </ul>
+    <p>Blackbelt your web development skills. Over 1000 free programming tutorials about:</p>
+    <ul>
+      <li>Modern JavaScript (beginner to advanced)</li>
+      <li>Node.js</li>
+      <li>React</li>
+      <li>Vue.js</li>
+      <li>Firebase</li>
+      <li>MongoDB</li>
+      <li>HTML &amp; CSS</li>
+      <li>PHP &amp; MySQL</li>
+      <li>Laravel</li>
+      <li>React Native</li>
+      <li>Flutter<br>
+        ...And many more topics as well &#x1F603;</li>
+    </ul>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/c/TheNetNinja">The Net Ninja</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Google Chrome Developers - Making the web more awesome.</h4>
+      </li>
+    </ul>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/c/GoogleChromeDevelopers/videos">Google Chrome
+          Developers</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; The New Boston</h4>
+      </li>
+    </ul>
+    <p>Tons of sweet computer-related tutorials and some other awesome videos too!</p>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/user/thenewboston/videos">The New Boston</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Derek Banas</h4>
+      </li>
+    </ul>
+    <p>I make tutorials based on your requests. I will cover any topic you can imagine.</p>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/c/derekbanas/videos">Derek Banas</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Academind</h4>
+      </li>
+    </ul>
+    <p>There&apos;s always something to learn!<br>
+      We (Max &amp; Manuel) create courses and tutorials that teach you everything related to web development. No matter
+      if it&apos;s programming languages like JavaScript, runtimes like NodeJS, or popular frameworks like ReactJS,
+      Angular, or VueJS (and much more!). We got you covered. &#x1F603;</p>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/c/Academind/videos">Academind</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Sonny Sangha</h4>
+      </li>
+    </ul>
+    <p>I&apos;ve been coding for over 10 years now. As a Full Stack developer, I&apos;ve worked both with startups and
+      large corporations to help build &amp; scale their companies. Along the journey, I realized my passion existed for
+      helping others excel and pursue their dreams as upcoming developers and if that&#x2019;s not enough I have cloned
+      most of the applications you have used in your life! &#x1F31F;</p>
+    <p><strong>&#x1F517; <a href="youtube.com/c/SonnySangha/videos">Sonny Sangha</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Clever Programmer</h4>
+      </li>
+    </ul>
+    <p>You can find awesome programming lessons here! Also, expect programming tips and tricks that will take your
+      coding skills to the next level.</p>
+    <p><strong>&#x1F517; <a href="https://www.youtube.com/c/CleverProgrammer/videos">Clever Programmer</a></strong></p>
+    <h2 class="mume-header" id="podcasts">&#x1F399; Podcasts:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Syntax</h4>
+      </li>
+    </ul>
+    <p>Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work
+      and talking about their own experiences. They cover from JavaScript frameworks like React, to the latest
+      advancements in CSS to simplifying web tooling.</p>
+    <p><strong>&#x1F517; <a href="https://syntax.fm/">Syntax</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Fullstack radio</h4>
+      </li>
+    </ul>
+    <p>A podcast for developers interested in building great software products. Hosted by Adam Wathan.</p>
+    <p><strong>&#x1F517; <a href="https://fullstackradio.com/">Fullstack radio</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; The Changelog</h4>
+      </li>
+    </ul>
+    <p>Conversations with the hackers, leaders, and innovators of software development hosted by Adam Stacoviak and
+      Jerod Santo.</p>
+    <p><strong>&#x1F517; <a href="https://changelog.com">The Changelog</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; The Laracasts Snippet</h4>
+      </li>
+    </ul>
+    <p>The Laracasts snippet, each episode, offers a single thought on some aspect of web development.</p>
+    <p><strong>&#x1F517; <a href="https://laracasts.com/podcast">The Laracasts Snippet</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Front End Happy Hour</h4>
+      </li>
+    </ul>
+    <p>A software engineering podcast featuring a panel of Software Engineers from Netflix, Twitch, &amp; Atlassian
+      talking over drinks about Frontend, JavaScript, and career development.</p>
+    <p><strong>&#x1F517; <a href="https://www.frontendhappyhour.com/">Front End Happy Hour</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; JavaScript Jabber Archives</h4>
+      </li>
+    </ul>
+    <p>A weekly discussion by top-end JavaScript developers on the technology and skills needed to level up on your
+      JavaScript journey.</p>
+    <p><strong>&#x1F517; <a href="https://topenddevs.com/podcasts/javascript-jabber">JavaScript Jabber
+          Archives</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Commit Your Code!</h4>
+      </li>
+    </ul>
+    <p>Commit Your Code motivates and inspires developers of all levels to reach their goals in tech. We will be sharing
+      stories and interviewing developers that have gone through this and made it to their dream jobs!</p>
+    <p><strong>&#x1F517; <a href="https://anchor.fm/commityourcode">Commit Your Code!</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Shop Talk</h4>
+      </li>
+    </ul>
+    <p>A weekly podcast about just building websites from Dave Rupert and Chris Coyier.</p>
+    <p><strong>&#x1F517; <a href="https://shoptalkshow.com/">Shop Talk</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Ladybug Podcast</h4>
+      </li>
+    </ul>
+    <p>We started the Ladybug Podcast as a few ladies Twitter acquaintances looking to add our voices to the
+      male-dominated tech podcast space.<br>
+      <strong>&#x1F517; <a href="https://www.ladybug.dev/">Ladybug Podcast</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; CodePen Radio</h4>
+      </li>
+    </ul>
+    <p>The CodePen team talks about the ins and outs of running a web software business.</p>
+    <p><strong>&#x1F517; <a href="https://blog.codepen.io/radio/">CodePen Radio</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; JAMStack Radio</h4>
+      </li>
+    </ul>
+    <p>A show all about the JAMstack, a new way to build fast and secure apps or websites.</p>
+    <p><strong>&#x1F517; <a href="https://open.spotify.com/show/08neivnJH1hLnYD79HUkfr">JAMStack Radio</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Modern web</h4>
+      </li>
+    </ul>
+    <p>Modern Web is a podcast that explores next-generation frameworks, standards, and techniques. Visit <a
+        href="http://modern-web.org">http://modern-web.org</a> for more.</p>
+    <p><strong>&#x1F517; <a href="https://open.spotify.com/show/5FGA58foRFkJ6IgJbCFYgm">Modern web</a></strong></p>
+    <h2 class="mume-header" id="code-editors">&#x1F680; Code Editors:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Visual Studio Code [VS Code]</h4>
+      </li>
+    </ul>
+    <p>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud
+      applications. Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.</p>
+    <p><strong>&#x1F517; <a href="https://code.visualstudio.com/">VS Code</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; CSublime Text</h4>
+      </li>
+    </ul>
+    <p>Sublime Text is a sophisticated text editor for code, markup, and prose. You&apos;ll love the slick user
+      interface, extraordinary features, and amazing performance.</p>
+    <p><strong>&#x1F517; <a href="https://www.sublimetext.com/">Sublime Text</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Atom</h4>
+      </li>
+    </ul>
+    <p>At GitHub, we&#x2019;re building the text editor we&#x2019;ve always wanted: hackable to the core, but
+      approachable on the first day without ever touching a config file. We can&#x2019;t wait to see what you build with
+      it.</p>
+    <p><strong>&#x1F517; <a href="https://atom.io/">Atom</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Brackets</h4>
+      </li>
+    </ul>
+    <p>Brackets is a lightweight, yet powerful, modern text editor. We blend visual tools into the editor so you get the
+      right amount of help when you want it. With new features and extensions released every 3-4 weeks, it&apos;s like
+      getting presents all year long.</p>
+    <p><strong>&#x1F517; <a href="https://brackets.io/">Brackets</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Vim</h4>
+      </li>
+    </ul>
+    <p>Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It
+      is included as &quot;vi&quot; with most UNIX systems and with Apple OS X</p>
+    <p><strong>&#x1F517; <a href="https://www.vim.org/">Vim</a></strong></p>
+    <h2 class="mume-header" id="color-palettes">&#x1F3A8; Color Palettes:</h2>
+
+    <h3 class="mume-header" id="coolors-the-super-fast-color-palette-generator">Coolors - The super fast color palette
+      generator!</h3>
+
+    <p>Generate or browse beautiful color combinations for your designs.</p>
+    <p><strong>&#x1F517; <a href="http://coolors.co">coolors.co</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Color Hunt</h4>
+      </li>
+    </ul>
+    <p>Discover the newest hand-picked color palettes of Color Hunt. Get color inspiration for your design and art
+      projects.</p>
+    <p><strong>&#x1F517; <a href="http://colorhunt.co">colorhunt.co</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Paletton - The Color Scheme Designer</h4>
+      </li>
+    </ul>
+    <p>In love with colors, since 2002. A designer tool for creating color combinations that work together well.
+      Formerly known as Color Scheme Designer. Use the color wheel to create great color palettes.</p>
+    <p><strong>&#x1F517; <a href="http://paletton.com">Paletton</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Color-Hex</h4>
+      </li>
+    </ul>
+    <p>Color-hex gives information about colors including color models (RGB, HSL, HSV, and CMYK), Triadic colors,
+      monochromatic colors, and analogous colors calculated on the color page. <a
+        href="http://Color-hex.com">Color-hex.com</a> also generates a simple CSS code for the selected color.</p>
+    <p><strong>&#x1F517; <a href="http://color-hex.com">Color Hex</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; ColorSpace</h4>
+      </li>
+    </ul>
+    <p>Here you can find the perfect matching color scheme for your next project! Generate nice color palettes, color
+      gradients, and much more! Your space for everything that has to do with color!</p>
+    <p><strong>&#x1F517; <a href="http://mycolor.space">ColorSpace</a></strong></p>
+    <h2 class="mume-header" id="ui-inspiration">&#x2747; UI Inspiration:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; UI Garage - Specific UI Design inspiration &amp; Patterns for your design.</h4>
+      </li>
+    </ul>
+    <p>Daily UI inspiration &amp; patterns for designers, and developers to find inspiration, tools, and the best
+      resources for your project.</p>
+    <p><strong>&#x1F517;<a href="http://uigarage.net">UI Garage</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Collect UI</h4>
+      </li>
+    </ul>
+    <p>Daily inspiration is collected from the daily UI archive and beyond. Based on Dribbble shots, hand-picked,
+      updated daily.</p>
+    <p><strong>&#x1F517; <a href="http://collectui.com">Collect UI</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Screenlane</h4>
+      </li>
+    </ul>
+    <p>Only the best mobile and web UI design inspiration, right in your inbox</p>
+    <p><strong>&#x1F517; <a href="http://uimovement.com">Screenlane</a></strong></p>
+    <h2 class="mume-header" id="docs">&#x1F4D4; Docs:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; W3Schools Free Online Web Tutorials</h4>
+      </li>
+    </ul>
+    <p>W3Schools offers free online tutorials, references, and exercises in all the major languages on the web. Covering
+      popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.</p>
+    <p><strong>&#x1F517; <a href="https://w3schools.com/">W3schools</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; MDN Web Docs</h4>
+      </li>
+    </ul>
+    <p>The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web
+      sites and progressive web apps.</p>
+    <p><strong>&#x1F517; <a href="https://developer.mozilla.org/">Developer Mozilla</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; DevDocs</h4>
+      </li>
+    </ul>
+    <p>Fast, offline, and free documentation browser for developers. Search 100+ docs in one web app including HTML,
+      CSS, JavaScript, PHP, Ruby, Python, Go, C, C++, and many more.</p>
+    <p><strong>&#x1F517; <a href="https://devdocs.io/">DevDocs</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; W3docs</h4>
+      </li>
+    </ul>
+    <p>HTML CSS JavaScript jQuery AJAX XML SQL Tutorials References Examples</p>
+    <p><strong>&#x1F517; <a href="http://w3docs.com/">W3docs</a></strong></p>
+    <h2 class="mume-header" id="animation-libraries">&#x1F4AB; Animation Libraries:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; CSShake</h4>
+      </li>
+    </ul>
+    <p>Some CSS classes to move your DOM! Easy-to-use classes that will add different kinds of shakes to each part of
+      your site.</p>
+    <p><strong>&#x1F517; <a href="https://elrumordelaluz.github.io/csshake/">CSShake</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Animate.css</h4>
+      </li>
+    </ul>
+    <p>Animate.css is a library of ready-to-use, cross-browser animations for you to use in your projects. Great for
+      emphasis, home pages, sliders, and attention-guiding hints.<br>
+      <strong>&#x1F517; <a href="https://animate.style/">Animate.css</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; AnimeJS</h4>
+      </li>
+    </ul>
+    <p>AnimeJS (/&#x2C8;&#xE6;n.&#x259;.me&#x26A;/) is a lightweight JavaScript animation library with a simple, yet
+      powerful API.<br>
+      It works with CSS properties, SVG, DOM attributes, and JavaScript Objects.</p>
+    <p><strong>&#x1F517; <a href="https://animejs.com/">AnimeJS</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; GreenSock (GSAP)</h4>
+      </li>
+    </ul>
+    <p>Professional-grade JavaScript animation for the modern web</p>
+    <p><strong>&#x1F517; <a href="https://greensock.com/gsap/">GreenSock (GSAP)</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Magic Animations</h4>
+      </li>
+    </ul>
+    <p>Magic CSS is a set of simple animations to include in your web or app projects.</p>
+    <p><strong>&#x1F517; <a href="https://www.minimamente.com/project/magic/">Magic Animations</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Hover CSS</h4>
+      </li>
+    </ul>
+    <p>A collection of CSS3-powered hover effects to be applied to links, buttons, logos, SVG, featured images, and so
+      on. Easily apply to your own elements, modify or just use them for inspiration. Available in CSS, Sass, and LESS.
+    </p>
+    <p><strong>&#x1F517; <a href="https://ianlunn.github.io/Hover/">Hover CSS</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; AniJS - A Library to Raise your Web Design without Coding</h4>
+      </li>
+    </ul>
+    <p><strong>&#x1F517; <a href="https://anijs.github.io/">AniJS</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Wicked CSS</h4>
+      </li>
+    </ul>
+    <p>WickedCSS. For the ones looking to spice up their sites with some sweet animation effects. Find all you need here
+      on the site and download the CSS file.</p>
+    <p><strong>&#x1F517; <a href="https://kristofferandreasen.github.io/wickedCSS/">Wicked CSS</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Tuesday - It&apos;s Tuesday A quirky CSS Animation Library.</h4>
+      </li>
+    </ul>
+    <p><strong>&#x1F517; <a href="https://shakrmedia.github.io/tuesday/">Tuesday</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Mo.js</h4>
+      </li>
+    </ul>
+    <p>Fast. Silky smooth animations and effects for staggering user&apos;s experience. ; Retina Ready. Screen
+      density-independent effects look good on any device. ; Simple.</p>
+    <p><strong>&#x1F517; <a href="https://mojs.github.io/">Mo.js</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Bounce.js</h4>
+      </li>
+    </ul>
+    <p>Bounce.js is a tool and JS library for generating beautiful CSS3-powered keyframe animations. The tool on <a
+        href="http://bouncejs.com">bouncejs.com</a> allows you to generate static keyframes that can be used without any
+      extra JavaScript, but if you&apos;d like your application to generate these on the fly, you can use the Bounce.js
+      library.</p>
+    <p><strong>&#x1F517; <a href="https://github.com/tictail/bounce.js">Bounce.js</a></strong></p>
+    <h2 class="mume-header" id="charts-data-visualization">&#x1F4CA; Charts / Data Visualization:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Chart.js</h4>
+      </li>
+    </ul>
+    <p>Simple, clean, and engaging HTML5-based JavaScript charts. Chart.js is an easy way to include animated,
+      interactive graphs on your website for free.</p>
+    <p><strong>&#x1F517; <a href="https://www.chartjs.org/">Chart.js</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; D3.js</h4>
+      </li>
+    </ul>
+    <p>D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using
+      HTML, SVG, and CSS. D3&#x2019;s emphasis on web standards gives you the full capabilities of modern browsers
+      without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven
+      approach to DOM manipulation.</p>
+    <p><strong>&#x1F517; <a href="https://d3js.org/">https://d3js.org/</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; &#x1F4CA; three.js</h4>
+      </li>
+    </ul>
+    <p>Three.js is a cross-browser JavaScript library and application programming interface used to create and display
+      animated 3D computer graphics in a web browser using WebGL</p>
+    <p><strong>&#x1F517; <a href="https://threejs.org/">https://threejs.org/</a></strong></p>
+    <h2 class="mume-header" id="chrome-extensions">&#x2699; Chrome Extensions:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Web Developer</h4>
+      </li>
+    </ul>
+    <p>The Web Developer extension adds a toolbar button to the browser with various web developer tools. This is the
+      official port of the Web Developer extension for Firefox.</p>
+    <p><strong>&#x1F517; <a
+          href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">Web
+          Developer</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; CSSViewer</h4>
+      </li>
+    </ul>
+    <p>CSSViewer is a simple CSS properties viewer originally made by Nicolas Huon as a Firefox add-on (2006-2008).</p>
+    <p><strong>&#x1F517; <a
+          href="https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce?hl=en">CSSViewer</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Wappalyzer</h4>
+      </li>
+    </ul>
+    <p>Find out the technology stack of any website. Create lists of websites that use certain technologies, with
+      company and contact details. Use our tools for lead generation, market analysis, and competitor research.</p>
+    <p><strong>&#x1F517; <a href="https://www.wappalyzer.com/">Wappalyzer</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; JSONView</h4>
+      </li>
+    </ul>
+    <p>JSONView &#xB7; Pretty-prints JSON instead of prompting to download it or rendering it as text. &#xB7;
+      Collapsible array and object sections for easy navigation.</p>
+    <p><strong>&#x1F517; <a href="https://jsonview.com/">JSONView</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Lorem Ipsum Generator</h4>
+      </li>
+    </ul>
+    <p>The Lorem Ipsum Generator quickly delivers default text to complement your amazing design. The default settings
+      are optimized to be used right after installation, but you can easily customize a few settings to get the perfect
+      text for your taste. Each sentence is randomly generated to simulate real text.</p>
+    <p><strong>&#x1F517; <a
+          href="https://chrome.google.com/webstore/detail/lorem-ipsum-generator-def/mcdcbjjoakogbcopinefncmkcamnfkdb?hl=en">Lorem
+          Ipsum Generator</a></strong></p>
+    <h2 class="mume-header" id="website-optimization-tools">&#x26A1; Website Optimization Tools:</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; Google PageSpeed Insights - Make your web pages fast on all devices ;</h4>
+      </li>
+    </ul>
+    <p><strong>&#x1F517; <a href="https://pagespeed.web.dev/"> Google PageSpeed Insights</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; GTmetrix</h4>
+      </li>
+    </ul>
+    <p>GTmetrix was developed by Carbon60 as a tool for customers to easily test the performance of their webpages</p>
+    <p><strong>&#x1F517; <a href="https://gtmetrix.com/">GTmetrix</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; WebPageTest</h4>
+      </li>
+    </ul>
+    <p>Test. Optimize. Repeat!<br>
+      Instantly test your site&#x2019;s speed, usability, and resilience in real browsers, devices, and locations around
+      the world.</p>
+    <p><strong>&#x1F517; <a href="https://www.webpagetest.org/">WebPageTest</a></strong></p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Yslow</h4>
+      </li>
+    </ul>
+    <p>YSlow is an open-source tool that analyzes your website and gives you suggestions to improve its performance.<br>
+      <strong>&#x1F517; <a href="http://yslow.org/">Yslow</a></strong>
+    </p>
+    <h2 class="mume-header" id="code-playground">&#x1F3DF; Code Playground</h2>
+
+    <ul>
+      <li>
+        <h4>&#x2A65; CodePen</h4>
+      </li>
+    </ul>
+    <p>CodePen is a playground for the front-end side of the web. It&#x2019;s all about inspiration, education, and
+      sharing. The service highlights popular demonstrations (&#x201C;Pens&#x201D;) and offers advanced functionality
+      such as sharing and embedding. CodePen is great for building a reduced test case to demonstrate and figure out a
+      bug.<br>
+      <strong>&#x1F517; <a href="http://codepen.io">codepen.io</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; CSSDesk</h4>
+      </li>
+    </ul>
+    <p>CSSDesk is an Online CSS Sandbox. It allows people to quickly test snippets of CSS code, and watch the result
+      appear live. There are line numbers and syntax highlighting appears in the text box as you type. One of the
+      greatest things is that it allows users to share their code with others as well.<br>
+      <strong>&#x1F517; <a href="http://cssdeck.com">cssdeck.com</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Google&#x2019;s Code Playground</h4>
+      </li>
+    </ul>
+    <p>Google&#x2019;s Code Playground is a web-based tool that lets web developers try out all of the APIs that Google
+      provides, tweak the code, and see the results. Google&#x2019;s Code Playground lets you play around without
+      opening an external editor, and all of the APIs are loaded for you in the Pick an API box<br>
+      <strong>&#x1F517; <a
+          href="http://developers.google.com/oauthplayground">developers.google.com/oauthplayground</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; JS Bin</h4>
+      </li>
+    </ul>
+    <p>It provides an environment to build apps and assists to test the snippets of HTML and CSS. It allows you to edit
+      the code and also you can also debug the code if any error you find. Once you finalized the code you may send it
+      to a peer for review.<br>
+      <strong>&#x1F517; <a href="http://jsbin.com">jsbin.com</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; JSFiddle</h4>
+      </li>
+    </ul>
+    <p>jsFiddle is a shell editor that eases writing JavaScript code by creating a custom environment based on popular
+      JS frameworks. You can select the framework &amp; the version of your choice (MooTools, jQuery, Dojo, Prototype,
+      YUI, Glow, Vanilla). Also, if there is, you can add a complementary framework like jQuery UI or MooTools. A great
+      feature is the ability to save &amp; share the code created with a unique URL generated. Optionally, jsFiddle has
+      an embedding feature too. It is an almost perfect platform for trying &amp; sharing your JavaScript code without
+      the need for a website.<br>
+      <strong>&#x1F517; <a href="http://jsfiddle.net">jsfiddle.net</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Dabblet</h4>
+      </li>
+    </ul>
+    <p>Dabblet is an interactive playground for quickly testing snippets of CSS and HTML code. It uses -prefix-free so
+      that you won&#x2019;t have to add any prefixes in your CSS code. You can save your work in Github gists, embed it
+      in other websites, and share it with others. It currently only supports modern versions of Chrome, Safari, and
+      Firefox. All posted code belongs to the poster and no license is enforced. Dabblet itself is open-source software
+      and is distributed under an NPOSL-3.0 license.<br>
+      <strong>&#x1F517; <a href="http://dabblet.com">dabblet.com</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Editr</h4>
+      </li>
+    </ul>
+    <p>Editr is an HTML, CSS, and JavaScript playground that you can host on your server. It is based on ACE Editor. It
+      is super easy to set up. It supports multiple instances on one page. Configurations are available via JS object or
+      HTML attributes. Editr supports 3 layout views: horizontal, vertical, and single. The first two are for live edit.
+      The third one is for presentation. Editr is licensed under MIT License.<br>
+      <strong>&#x1F517; <a href="http://lab.kasper.io/editr">lab.kasper.io/editr</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; Livewave</h4>
+      </li>
+    </ul>
+    <p>Liveweave is an HTML5, CSS3 &amp; JavaScript playground and a real-time editor for web designers and developers.
+      It is a great tool to test, practice, and share your creations. It has resizable panels so that you can write your
+      code (or weave, as we call it) the way you want. Liveweave also has built-in context-sensitive code-hinting for
+      HTML5 and CSS3 tags/attributes that makes life a lot easier.<br>
+      <strong>&#x1F517; <a href="http://liveweave.com">liveweave.com</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; <a href="http://Tech.io">Tech.io</a></h4>
+      </li>
+    </ul>
+    <p>Techio is a collaborative platform to discover and share unique perspectives on any technology through
+      open-source playgrounds. Empower others to learn by crafting hands-on tutorials on topics that matter to you.<br>
+      <strong>&#x1F517; <a href="http://tech.io">tech.io</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; PlayCode</h4>
+      </li>
+    </ul>
+    <p>PlayCode is a website where you can type in code and it immediatly shows you what you programmed in a little
+      extra tab.<br>
+      <strong>&#x1F517; <a href="http://playcode.io">playcode.io</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; CodeSandbox</h4>
+      </li>
+    </ul>
+    <p>CodeSandbox is an online code editor and prototyping tool that makes creating and sharing web apps faster.<br>
+      <strong>&#x1F517; <a href="http://codesandbox.io">codesandbox.io</a></strong>
+    </p>
+    <ul>
+      <li>
+        <h4>&#x2A65; StackBlitz</h4>
+      </li>
+    </ul>
+    <p>StackBlitz is an online IDE where you can create Angular &amp; React projects that are immediately online &amp;
+      shareable via link&#x2026; in just one click. &#x1F62E;<br>
+      It automatically takes care of installing dependencies, compiling, bundling, and hot reloading as you type.<br>
+      <strong>&#x1F517; <a href="http://stackblitz.com">stackblitz.com</a></strong>
+    </p>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
