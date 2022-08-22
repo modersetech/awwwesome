@@ -1,8 +1,8 @@
 Learning the skills you need for web design or web development is the first step toward working on the web— but that also means familiarizing yourself with the tools of the trade. That’s why I put together this list of **Awwwesome ** free resources you’ll need for web development, web design, or both.
 
 As you learn, keep this list handy.
-     
-# 🌐 Free Hosting:
+ 
+## 🌐 Free Hosting:
 
 ### 🌐 Netlify 
 Develop & deploy the best web experiences in record time
@@ -52,7 +52,7 @@ Learn how to use GitLab Pages to deploy a static website at no additional cost.
 
 
 
-# 📕 Learning Platforms:
+## 📕 Learning Platforms:
 
 ### 📕 freeCodeCamp
 freeCodeCamp is a community of millions of people around the world who are learning to code together. You can learn to code with free online courses, programming projects, and interview preparation for developer jobs.
@@ -96,7 +96,7 @@ SoloLearn apps provide you with the ability to choose what you will learn withou
 
 
 
-# 👨‍💻 Coding Challenge Platforms:
+## 👨‍💻 Coding Challenge Platforms:
 
 ### 👨‍💻 Codewars - Achieve mastery through coding practice and developer mentorship
 Coding practice for all programming levels – Join a community of over 3 million developers and improve your coding skills in over 55 programming languages!
@@ -157,7 +157,7 @@ more than 2400 contests hosted as of 2012, ranging from instant challenges to lo
 
 
 
-# 👨‍🎓 Freelancing platforms:
+## 👨‍🎓 Freelancing platforms:
 
 ### 👨‍🎓 Toptal
 Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world. Top companies hire Toptal freelancers for their most important projects.
@@ -206,7 +206,7 @@ Your job is our job. Visit Hireable today and search for thousands of jobs in yo
 
 
 
-# 📌 List of websites to find remote jobs:
+## 📌 List of websites to find remote jobs:
 
 ### 📌 FlexJobs: The Best Remote Jobs, Work from Home Jobs & More
 The #1 job search site for hand-screened flexible and remote jobs (work-from-home jobs) since 2007. Plus get resume, coaching, and career help. Join today!
@@ -259,7 +259,7 @@ Find a full-time remote job in a tech company.
 
 
 
-# 🏞 Photos:
+## 🏞 Photos:
 
 ### 🏞 Unsplash
 Beautiful, free images and photos that you can download and use for any project. Better than any royalty-free or stock photos.
@@ -277,7 +277,7 @@ Free stock photos &amp; videos you can use everywhere. Browse millions of high-q
 
 
 
-# 🌈 Illustrations:
+## 🌈 Illustrations:
 
 ### 🌈 unDraw
 The design project with open-source illustrations for any idea you can imagine and create. Create beautiful websites, products, and applications with your color, for free.
@@ -311,7 +311,7 @@ Blush makes it easy to add free illustrations to your designs. Play with fully c
 
 
 
-# 🔠 Icons:
+## 🔠 Icons:
 
 ### 🔠 Font Awesome
 Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators. The world’s most popular and easiest-to-use icon set just got an upgrade. More icons. More styles. More Options.
@@ -341,7 +341,7 @@ Free simple icons for your next project
 
 
 
-# ✍️ Fonts:
+## ✍️ Fonts:
 
 ### ✍️ Google Fonts
 Making the web more beautiful, fast, and open through great typography
@@ -366,7 +366,7 @@ Handpicked free fonts for graphic designers with commercial-use licenses.
 
 
 
-# ▶ Youtube Channels:
+## ▶ Youtube Channels:
 
 ### ▶ Traversy Media
 Traversy Media features the best online web development and programming tutorials for all of the latest web technologies from the building blocks of HTML, CSS & JavaScript to frontend frameworks like React and Vue to backend technologies like Node.js, Python, and PHP
@@ -428,7 +428,7 @@ You can find awesome programming lessons here! Also, expect programming tips and
 
 
 
-# 🎙 Podcasts:
+## 🎙 Podcasts:
 
 ### 🎙 Syntax
 Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences. They cover from JavaScript frameworks like React, to the latest advancements in CSS to simplifying web tooling.
@@ -491,7 +491,7 @@ Modern Web is a podcast that explores next-generation frameworks, standards, and
  
 
 
-# 🚀 Code Editors:
+## 🚀 Code Editors:
 
 ### 🚀 Visual Studio Code [VS Code]
 Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.  Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.
@@ -520,7 +520,7 @@ Vim is a highly configurable text editor built to make creating and changing any
 
 
 
-# 🎨 Color Palettes:
+## 🎨 Color Palettes:
 
 ### Coolors - The super fast color palette generator!
 Generate or browse beautiful color combinations for your designs.
@@ -550,7 +550,7 @@ Here you can find the perfect matching color scheme for your next project! Gener
 
 
 
-# ❇ UI Inspiration:
+## ❇ UI Inspiration:
 
 ### ❇ UI Garage - Specific UI Design inspiration & Patterns for your design.
 Daily UI inspiration & patterns for designers, and developers to find inspiration, tools, and the best resources for your project.
@@ -569,7 +569,7 @@ Only the best mobile and web UI design inspiration, right in your inbox
 
 
 
-# 📔 Docs:
+## 📔 Docs:
 
 ### 📔 W3Schools Free Online Web Tutorials
 W3Schools offers free online tutorials, references, and exercises in all the major languages on the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.
@@ -593,7 +593,7 @@ HTML CSS JavaScript jQuery AJAX XML SQL Tutorials References Examples
 
 
 
-# 💫 Animation Libraries:
+## 💫 Animation Libraries:
 
 ### 💫 CSShake
 Some CSS classes to move your DOM! Easy-to-use classes that will add different kinds of shakes to each part of your site.
@@ -651,7 +651,7 @@ Bounce.js is a tool and JS library for generating beautiful CSS3-powered keyfram
 
 
 
-# 📊 Charts / Data Visualization:
+## 📊 Charts / Data Visualization:
 
 ### 📊 Chart.js
 Simple, clean, and engaging HTML5-based JavaScript charts. Chart.js is an easy way to include animated, interactive graphs on your website for free.
@@ -670,7 +670,7 @@ Three.js is a cross-browser JavaScript library and application programming inter
 
 
 
-# ⚙ Chrome Extensions:
+## ⚙ Chrome Extensions:
 
 ### ⚙ Web Developer
 The Web Developer extension adds a toolbar button to the browser with various web developer tools. This is the official port of the Web Developer extension for Firefox.
@@ -699,7 +699,7 @@ The Lorem Ipsum Generator quickly delivers default text to complement your amazi
 
 
 
-#  ⚡ Website Optimization Tools:
+##  ⚡ Website Optimization Tools:
 
 ### ⚡ Google PageSpeed Insights - Make your web pages fast on all devices ;
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1659821630568/EXy9D1578.png align="left")
