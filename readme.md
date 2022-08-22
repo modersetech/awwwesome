@@ -5,7 +5,25 @@ Learning the skills you need for web design or web development is the first step
 As you learn, keep this list handy.
 
 ## Contents
-- [Free Hostings](#-free-hosting)
+- [🌐 Free Hostings](#-free-hosting)
+- [📕 Learning Platforms](#-learning-platforms)
+- [👨‍💻 Coding Challenge Platforms](#-coding-challenge-platforms)
+- [👨‍🎓 Freelancing platforms](#-freelanicing-platforms)
+- [📌 List of websites to find remote jobs](#-list-of-websites-to-find-remote-jobs)
+- [🏞 Photos](#-photos)
+- [🌈 Illustrations](#-illustrations)
+- [🔠 Icons](#-icons)
+- [✍️ Fonts](#-fonts)
+- [▶ Youtube Channels](#-youtube-channels)
+- [🎙 Podcasts](#-podcasts)
+- [🚀 Code Editors](#-code-editors)
+- [🎨 Color Palettes](#-color-palettes)
+- [❇ UI Inspiration](#-ui-inspiration)
+- [📔 Docs](#-docs)
+- [💫 Animation Libraries](#-animation-libraries)
+- [📊 Charts / Data Visualization](#-charts--data-visualization)
+- [⚙ Chrome Extensions](#-chrome-extensions)
+- [⚡ Website Optimization Tools](#-website-optimization-tools)
 
 ## 🌐 Free Hosting:
 
