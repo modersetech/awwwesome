@@ -746,6 +746,3 @@ Instantly test your site’s speed, usability, and resilience in real browsers, 
 YSlow is an open-source tool that analyzes your website and gives you suggestions to improve its performance.
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1659822610687/URM1YCKBe.png)
 **🔗 [Yslow](http://yslow.org/)**
-
-#### Thank you very much for reading! 😊
-Please do comment your thoughts.
