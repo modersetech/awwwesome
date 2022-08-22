@@ -25,7 +25,7 @@ As you learn, keep this list handy.
 - [⚙ Chrome Extensions](#-chrome-extensions)
 - [⚡ Website Optimization Tools](#-website-optimization-tools)
 - [🏟 Code Playground](#-code-playground)
-- [💠Contribute to this repository](contribution.md)
+- ## [💠Contribute to this repository](contribution.md)
 
 ## 🌐 Free Hosting:
 
@@ -740,58 +740,58 @@ YSlow is an open-source tool that analyzes your website and gives you suggestion
 ## 🏟 Code Playground
 - #### ⩥ CodePen
 CodePen is a playground for the front-end side of the web. It’s all about inspiration, education, and sharing. The service highlights popular demonstrations (“Pens”) and offers advanced functionality such as sharing and embedding. CodePen is great for building a reduced test case to demonstrate and figure out a bug.
-**🔗 codepen.io**
+**🔗 [codepen.io](codepen.io)**
  
 - #### ⩥ CSSDesk
 CSSDesk is an Online CSS Sandbox. It allows people to quickly test snippets of CSS code, and watch the result appear live. There are line numbers and syntax highlighting appears in the text box as you type. One of the greatest things is that it allows users to share their code with others as well.
-**🔗 cssdeck.com**
+**🔗 [cssdeck.com](cssdeck.com)**
  
 
 - #### ⩥ Google’s Code Playground
 Google’s Code Playground is a web-based tool that lets web developers try out all of the APIs that Google provides, tweak the code, and see the results. Google’s Code Playground lets you play around without opening an external editor, and all of the APIs are loaded for you in the Pick an API box
-**🔗 developers.google.com/oauthplayground**
+**🔗 [developers.google.com/oauthplayground](developers.google.com/oauthplayground)**
 
  
 
 - #### ⩥ JS Bin
 It provides an environment to build apps and assists to test the snippets of HTML and CSS. It allows you to edit the code and also you can also debug the code if any error you find. Once you finalized the code you may send it to a peer for review.
-**🔗  jsbin.com**
+**🔗  [jsbin.com](jsbin.com)**
  
 
 - #### ⩥ JSFiddle
 jsFiddle is a shell editor that eases writing JavaScript code by creating a custom environment based on popular JS frameworks. You can select the framework & the version of your choice (MooTools, jQuery, Dojo, Prototype, YUI, Glow, Vanilla). Also, if there is, you can add a complementary framework like jQuery UI or MooTools. A great feature is the ability to save & share the code created with a unique URL generated. Optionally, jsFiddle has an embedding feature too. It is an almost perfect platform for trying & sharing your JavaScript code without the need for a website.
-**🔗 jsfiddle.net**
+**🔗 [jsfiddle.net](jsfiddle.net)**
  
 
 - #### ⩥ Dabblet
 Dabblet is an interactive playground for quickly testing snippets of CSS and HTML code. It uses -prefix-free so that you won’t have to add any prefixes in your CSS code. You can save your work in Github gists, embed it in other websites, and share it with others. It currently only supports modern versions of Chrome, Safari, and Firefox. All posted code belongs to the poster and no license is enforced. Dabblet itself is open-source software and is distributed under an NPOSL-3.0 license.
-**🔗 dabblet.com**
+**🔗 [dabblet.com](dabblet.com)**
  
 
 - #### ⩥ Editr
 Editr is an HTML, CSS, and JavaScript playground that you can host on your server. It is based on ACE Editor. It is super easy to set up. It supports multiple instances on one page. Configurations are available via JS object or HTML attributes. Editr supports 3 layout views: horizontal, vertical, and single. The first two are for live edit. The third one is for presentation. Editr is licensed under MIT License.
-**🔗 lab.kasper.io/editr**
+**🔗 [lab.kasper.io/editr](lab.kasper.io/editr)**
  
 
 - #### ⩥ Livewave
 Liveweave is an HTML5, CSS3 & JavaScript playground and a real-time editor for web designers and developers. It is a great tool to test, practice, and share your creations. It has resizable panels so that you can write your code (or weave, as we call it) the way you want. Liveweave also has built-in context-sensitive code-hinting for HTML5 and CSS3 tags/attributes that makes life a lot easier.
-**🔗 liveweave.com**
+**🔗 [liveweave.com](liveweave.com)**
  
 - #### ⩥ Tech.io
 Techio is a collaborative platform to discover and share unique perspectives on any technology through open-source playgrounds. Empower others to learn by crafting hands-on tutorials on topics that matter to you.
-**🔗 tech.io**
+**🔗 [tech.io](tech.io)**
 - #### ⩥ PlayCode
 PlayCode is a website where you can type in code and it immediatly shows you what you programmed in a little extra tab.
-**🔗 playcode.io**
+**🔗 [playcode.io](playcode.io)**
 
 - #### ⩥ CodeSandbox
 CodeSandbox is an online code editor and prototyping tool that makes creating and sharing web apps faster.
-**🔗 codesandbox.io**
+**🔗 [codesandbox.io](codesandbox.io)**
 
 - #### ⩥ StackBlitz
 StackBlitz is an online IDE where you can create Angular & React projects that are immediately online & shareable via link… in just one click. 😮
 It automatically takes care of installing dependencies, compiling, bundling, and hot reloading as you type.
-**🔗 stackblitz.com**
+**🔗 [stackblitz.com](stackblitz.com)**
 - #### ⩥ Glitch
 With working example apps to remix, a code editor to modify them, instant hosting and deployment - anybody can build a web app on Glitch.
-**🔗 glitch.com**
+**🔗 [glitch.com](glitch.com)**
