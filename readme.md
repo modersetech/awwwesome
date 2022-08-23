@@ -176,7 +176,7 @@ The SPOJ platform is centered around an online judge system, which serves for th
 
 
 
-## 👨‍🎓 Freelancing platforms:
+## 👨‍🎓 Freelancing platform`s:
 
 - #### ⩥ Toptal
 Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world. Top companies hire Toptal freelancers for their most important projects.
