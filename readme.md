@@ -97,7 +97,7 @@ Build 30 things with vanilla JS in 30 days with 30 tutorials
 - #### ⩥ Frontend Mentor | Front-end coding challenges using a real-life workflow
 Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working with professional designs.
 
-**🔗 [FrontendMentor](http://frontendmentor.io)**
+**🔗 [Frontend Mentor](http://frontendmentor.io)**
 
 - #### ⩥ Test Automation University | Applitools
 Become a test automation superstar - Free!🌟
