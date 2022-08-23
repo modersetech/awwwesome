@@ -8,7 +8,7 @@ As you learn, keep this list handy.
 - [🌐 Free Hostings](#-free-hosting)
 - [📕 Learning Platforms](#-learning-platforms)
 - [👨‍💻 Coding Challenge Platforms](#-coding-challenge-platforms)
-- [👨‍🎓 Freelancing platforms](#-freelanicing-platforms)
+- [👨‍🎓 Freelancing platforms](#-freelancing-platforms)
 - [📌 List of websites to find remote jobs](#-list-of-websites-to-find-remote-jobs)
 - [🏞 Photos](#-photos)
 - [🌈 Illustrations](#-illustrations)
