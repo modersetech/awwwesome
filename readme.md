@@ -1,6 +1,6 @@
 # Awwwesome list of web development resources 💥
 ![main image](/20220823_041122.png) 
-Learning the skills you need for web design or web development is the first step toward working on the web— but that also means familiarizing yourself with the tools of the trade. That’s why I put together this list of **Awwwesome** free resources you’ll need for web development, web design, or both.
+Learning the skills you need for web design or web development is the first step toward working on the web— but that also means familiarizing yourself with the tools of the trade. That’s why I put together this list of**Awwwesome**free resources you’ll need for web development, web design, or both.
 
 As you learn, keep this list handy.
 
@@ -809,3 +809,158 @@ It automatically takes care of installing dependencies, compiling, bundling, and
 With working example apps to remix, a code editor to modify them, instant hosting and deployment - anybody can build a web app on Glitch.
 
 **🔗 [glitch.com](glitch.com)**
+
+## ✒ Blogs of Developers
+
+- #### ⩥ Coding Horror
+
+Coding Horror is a blog by Jeff Atwood, an experienced web developer. Although, the blog consists of all types of security and software development related topics, Jeff personally concentrates on the human participation in software development. The author firmly believes that one also needs to focus on the people who are going to use the code and understand them while preparing the code.
+
+**🔗 [Coding Horror](https://blog.codinghorror.com)**
+- #### ⩥ Joel on Software
+
+Joel on software was found by Joel Spolsky in 2000. There is a lot to talk about this blogger. Joel Spolsky worked as a program manager in Microsoft. Later he became the co-founder of StackExchange, a site for programming Q&A. Programming world also recognizes him as the founder of Fog Creek Software and maker of the software Trello. You will love this blog if you love topics related to software development, business, and management.
+**🔗 [Joel on Software](https://www.joelonsoftware.com/)**
+
+- #### ⩥ Code Simplicity
+Code Simplicity talks about introducing simplicity in code designs. The author, Max Kanat-Alexander (who has also written the book “Code Simplicity: The Science of Software Development”) believes in simple software designs and considers complex designs stupid. He is an experienced software engineer working at Google. He has also lead the team behind Bugzilla project.
+**🔗 [Code Simplicity](http://www.codesimplicity.com/)**
+
+- #### ⩥ Scott Hanselman
+
+You can look upon Scott Hanselman’s blog if you want helpful, concise and clear advices on web, development culture, gadgets, code, technology and anything related to a developer’s interest. His experience as a professor and also at Microsoft can be clearly seen in his articles. Moreover, his articles reflect his personality. You can also follow him at his Youtube channel and three podcasts.
+**🔗 [Scott Hanselman](http://www.hanselman.com/blog/)**
+
+- #### ⩥ Specky Boy
+The blog was found in 2007 by Paul Andrew with a notion to provide useful information related to various design resources and talk about latest web technologies. Now, the blog has developed into a great design magazine which can guide developers and designers with all kinds of useful resources, time-saving techniques and online tutorials.
+**🔗 [Specky Boy](https://speckyboy.com/)**
+
+- #### ⩥ SitePoint
+
+SitePoint is very popular tutorial site for fields related to product creation, programming, development, SEO, web designing and entrepreneurship found in 1999. The site from also consists of numerous video tutorials which may require premium membership in the website.
+**🔗 [SitePoint](https://www.sitepoint.com/)**
+
+- #### ⩥ Six Revisions
+Six revisions though has minimal look but focuses on publishing awesome contents since 2008. The blog is followed by developers and designers where you can find many blog posts related to WordPress, design, JavaScript, HTML, CSS and many more. The posts are added few times in a month. You can also enjoy different free tutorials and tools in this blog.
+**🔗 [Six Revisions](http://sixrevisions.com/)**
+
+- #### ⩥ Blog /\ndy
+
+The blog /\ndy founded by Andy Hunt offers knowledge about development topics especially agile development. His insights as the founder of Agile Alliance and an important player from the team of Agile Manifesto helps the blog to offer quality solutions related to the topics.
+**🔗 [Blog /\ndy](http://andy.pragprog.com/)**
+
+- #### ⩥ Federico Cargnelutti
+Any developer will love Federico’s blog. The blogger himself is a professional web and mobile developer. He regularly posts about agile development, software architecture and coding (especially PHP). He includes tutorials and Twitter posts to share his insights on the respective fields.
+**🔗 [Federico Cargnelutti](https://blog.fedecarg.com/)**
+
+- #### ⩥ Paul Graham’s Essays
+
+Paul Graham’s Essays are excellent guide for developers who want to understand and  develop businesses based on SaaS. The author is the man behind Viaweb (a SaaS based company founded in 1995) and co-founder to Y-combinator. The blog will provide you insight of your role as a developer in the world of business.
+**🔗 [Paul Graham’s Essays](http://www.paulgraham.com/articles.html)**
+
+- #### ⩥ DailyJS
+
+The blog was made to provide daily updates on everything about JavaScript. Alex Young, the author of the blog creates content consisting of worked examples and hands-on tips about JavaScript.
+**🔗 [DailyJS](https://medium.com/dailyjs)**
+
+- #### ⩥ ProgrammableWeb
+
+The blog ProgrammableWeb is popular for its huge directory of research papers and API’s (for mobile and web development). The blog was launched in 2005 and works for the development of API economy. ProgrammableWeb has a high publication rate with even 10 posts in a day and still maintains their content’s quality.
+**🔗 [ProgrammableWeb](https://www.programmableweb.com/)**
+
+- #### ⩥ Ajaxian
+Ajaxian blog comes in the must read list for many developers because of the diversity of topics it contains (ranging from XML to .Net development). The blog produces engaging content on different components of development especially AJAX and JavaScript. The team consists of 12 members (core developers) who have gathered experience from working with big guns like Google.
+**🔗 [Ajaxian](http://ajaxian.com/)**
+
+- #### ⩥ Pontikis
+
+You will find many guides and how to articles in Pontikis. Christos Pontikis, the author of the blog provides detailed content about different languages, frameworks alongside his insights on MySQL, jQuery and PHP. so, if you a knowledge driven developer, this blog site is for you.
+**🔗 [Pontikis](http://www.pontikis.net/)**
+
+- #### ⩥ David Walsh
+The blog by David Walsh focuses on front end technologies and talks about languages like CSS, JS and HTML/5. You will find many engaging and honest posts which supports trial and error development and open source contribution. FYI, David Walsh is a part of core developing team of MooTools JavaScript Framework and is a seasoned web developer in Mozilla.
+**🔗 [David Walsh](https://davidwalsh.name/)**
+
+- #### ⩥ WebAppers
+WebAppers is another blog which supports collecting and sourcing open source resources and tools. Besides offering guides and helpful advice to web designers and developers, the blog also provides nearly 700 plugins to facilitate their needs.
+**🔗 [WebAppers](http://www.webappers.com/)**
+
+- #### ⩥ Codrops
+
+You may not find new posts periodically on Codrops but it shines with its USP of innovative, inspiring and most useful content. Codrops offers awesome content, freebies, blueprints and tutorials based on latest techniques and trends in web development and designing.
+**🔗 [Codrops](https://tympanus.net/codrops/)**
+
+- #### ⩥ Tuts+ Tutorials
+
+Tuts+ is a place where you can find in-depth tutorials about web design, coding, and illustration. Moreover, you can follow these tutorials at your comfort and various topics about CSS, UX and HTML, design tools and resources available in the blog will help you increase your skills in web designing. The blog is maintained by Envato.
+**🔗 [Tuts+ Tutorials](https://webdesign.tutsplus.com/)**
+
+- #### ⩥ Eric Sink
+
+You can find roundups, useful advice and views by Eric Sink in his blog. Eric Sink has worked at SourceGear and also been a part of the development team of Internet Explorer. He talks about everything related to software development.
+**🔗 [Eric Sink](http://ericsink.com/)**
+
+- #### ⩥ Ytechie
+
+Jason Young, the author of Ytechie, adds humour to each of his articles. You can understand his writing style by going through his author bio. His blogs are full of useful knowledge and friendly discussions supporting technologies like Node.js and Windows Azure.
+**🔗 [Ytechie](http://www.ytechie.com/)**
+
+- #### ⩥ The Daily WTF
+The Daily WTF
+Enjoy your breaks by reading these amazing articles by The Daily WTF. It’s not so monotonous tone offers you humorous contents with deep insight about programming and development. My personal favorite sections from the blog are ‘disastrous development stories’ and ‘how not to guides’.
+**🔗 [The Daily WTF](http://thedailywtf.com/)**
+
+- #### ⩥ Silk and Spinach
+
+Silk and Spinach is a great blog for advice related to agile development. Kevin Rutherford (author) has a vast experience in agile development which he acquired by working as a Scrum Master and freelancer developer. He has a membership in Agile Alliance as well.
+**🔗 [Silk and Spinach](https://silkandspinach.net/)**
+
+- #### ⩥ PragDave
+
+Dave Thomas, a publisher and an experienced coder, believes in learning forever ideology. Thus, he propagates the idea through his blog by creating a different approach by adding philosophy of martial arts in coding. He has termed it as CodeKata.  He provides latest updates, views, guides and tutorials about development through his blog and tweets.
+**🔗 [PragDave](https://pragdave.me/)**
+
+- #### ⩥ Jonathan Kohl
+
+Jonathan Kohl shares his expertise in developing mobile application and business opportunities surrounding the technology through his blog. His blog can be interesting for those developers who are also interested in business aspects of application development.
+**🔗 [Jonathan Kohl](http://www.kohl.ca/blog/)**
+
+- #### ⩥ Word Aligned
+Thomas Guest with his blog Word Aligned offers coding tricks and hacks which are both helpful and humorous to read. I love reading his awesome post -“Jokey Code?”.
+**🔗 [Word Aligned](http://wordaligned.org/)**
+
+- #### ⩥ Succeeding with Agile
+
+Another awesome blogpost for someone following agile development. The blogger, Mike Cohn with his 20 years of knowledge in handling Scrum projects, strongly supports agile projects. So, if you want to enhance your agile processing capabilities, you should read this blog.
+**🔗 [Succeeding with Agile](http://www.mountaingoatsoftware.com/blog)**
+
+- #### ⩥ Hongkiat
+Hongkiat has some great resources for designers. Hongkiat Lim launched this blog in 2007 because he wanted to do something more interesting than his monotonous job. Presently, Hongkiat serves more than 10 million visitors in a month and is one of the most popular blogs in the world. The blog often covers topics like various design tools, WordPress, CSS, HTML and Photoshop.
+**🔗 [Hongkiat](http://www.hongkiat.com/blog/)**
+
+- #### ⩥ CSS Tricks
+CSS-Tricks created by Chris Coyier concentrates on fancy CSS tricks. It provides forums, code snippets, videos and articles related to CSS. You can also have a look on a calendar for developers which information about generally known CSS properties and selectors.
+**🔗 [CSS Tricks](https://css-tricks.com/)**
+
+- #### ⩥ Designr Fix
+Designr FixNow, when talking a site about fancy design or a site for design junkies, there is nothing better than Designr Fix. The blog takes art seriously as a source for inspiration in making awesome designs. It offers resources, deals, tutorials and freebies.
+**🔗 [Designr Fix](http://designrfix.com/)**
+
+- #### ⩥ Smashing Magazine
+Smashing Magazine is an outstanding blog dedicated to development and designing. You can find great posts about responsive design issues, Andriod, iOS, WordPress, JavaScript, HTML, CSS and other latest techniques. You can also buy e-books through smashing magazine.
+**🔗 [Smashing Magazine](https://www.smashingmagazine.com/)**
+- #### ⩥ Scott Berkun
+Scott BerkunThe blog by Scott Berkun majorly focuses on insights related to his work experience in WordPress and Microsoft. The author also offers content related to philosophy, leadership and creativity.  So, the blog can prove to be an interesting venue to you, if you are bored of monotonous contents in technical blogs. The blog can help you transform into a better programmer as well as a better person.
+**🔗 [Scott Berkun](http://scottberkun.com/blog/)**
+
+- #### ⩥ HTML5 Doctor
+HTML5 DoctorHTML5 Doctor has good collection of HTML5 resources which is being maintained by a group consisting of Ian Devlin, Oli Studholme, Remy Sharp, Bruce Lawson, Steve Faulkner and Rich Clark. The inspiration behind the launch of blog was the lack of resources related to HTML5. Interactive sessions are encouraged in HTML5 doctors where you can ask them to debug your code or a simple question.
+**🔗 [HTML5 Doctor](http://html5doctor.com/)**
+
+- #### ⩥ Smashing Hub
+Smashing HubSmashing Hub shares content related to designing issues in WordPress. You go for its directory of design giveaways and freebies. The blog is a great help for developers and designers.
+**🔗 [Smashing Hub](http://smashinghub.com/)**
+
+- #### ⩥ Jon Skeet's coding blog
+Last but not the least, Jon Skeet is known by the name ‘human compiler’ in the world of programming. His blog is a miscellaneous baggage of content and books related to C#,  Java, F#, Stack overflow, and other general topics of coding. His blog also provides reviews of different books.
+**🔗 [Jon Skeet's coding blog](https://codeblog.jonskeet.uk/)**
