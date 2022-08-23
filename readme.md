@@ -436,7 +436,7 @@ We (Max & Manuel) create courses and tutorials that teach you everything related
 - #### ⩥ Sonny Sangha
 I've been coding for over 10 years now. As a Full Stack developer, I've worked both with startups and large corporations to help build & scale their companies. Along the journey, I realized my passion existed for helping others excel and pursue their dreams as upcoming developers and if that’s not enough I have cloned most of the applications you have used in your life! 🌟
 
-**🔗 [Sonny Sangha](youtube.com/c/SonnySangha/videos)**
+**🔗 [Sonny Sangha](https://www.youtube.com/c/SonnySangha/videos)**
 
 - #### ⩥ Clever Programmer
 You can find awesome programming lessons here! Also, expect programming tips and tricks that will take your coding skills to the next level.
