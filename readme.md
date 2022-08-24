@@ -28,8 +28,6 @@ As you learn, keep this list handy.
 - [✒ Blogs for Developers](#-blogs-for-developers)
 - ## [💠Contribute to this repository](contribution.md)
 
-(Dont forget to star the repo 🌟)
-
 ## 🌐 Free Hosting:
 
 - #### ⩥ Netlify 
