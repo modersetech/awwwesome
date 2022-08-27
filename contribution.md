@@ -1,8 +1,4 @@
-You've finally decided to make your first GitHub contribution and want to quickly start making changes. Whether it's an Open Source Software (OSS) on public GitHub or your organization's internal project on GitHub Enterprise, there's a well-defined process for contributing that makes your life easier and keeps your codebase clean. In this article, I'll give you ten simple steps to ensure a quick and clean GitHub contribution.
-
----
-
-## The Contribution Lifecycle
+# The Contribution Guidelines
 
 ### 1. Fork the main repository
 Forking the repository creates a copy of it in your account. You can make changes and push any code to this fork, without worrying about messing up the original code base. Click on the fork button at the top of the page to create a new fork.
