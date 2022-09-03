@@ -1,4 +1,4 @@
-![main](/main.jpeg)
+![main](./main.jpeg)
 
 You only need this repo to become a Developer because this post has a nearly an unlimited amount of every type of resource covering everything you will need. 
 
