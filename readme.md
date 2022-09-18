@@ -26,7 +26,7 @@ As you learn, keep this list handy.
 - [⚡ Website Optimization Tools](#-website-optimization-tools)
 - [🏟 Code Playground](#-code-playground)
 - [✒ Blogs for Developers](#-blogs-for-developers)
-- ## [💠Contribute to this repository](contribution.md)
+- ## [💠Add missing list or link](contribution.md)
 
 ## 🌐 Free Hosting:
 
