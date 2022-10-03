@@ -184,6 +184,10 @@ Improve your front-end skills by building real projects. Solve real-world HTML, 
 
 **⩥ 🔗 [Frontend Mentor](http://frontendmentor.io)**
 
+### 🔹 CSSBattle - the CSS code-golfing game!
+CSS code-golfing game is here! Use your CSS skills to replicate targets with smallest possible code. Feel free to check out the targets below and put your CSS skills to test.
+**⩥ 🔗 [CSSBattle](https://cssbattle.dev/)
+
 
 ## 👨‍🎓 Freelancing platforms:
 
