@@ -8,6 +8,7 @@ As you learn, keep this list handy.
 - [🌐 Free Hostings](#-free-hosting)
 - [📕 Learning Platforms](#-learning-platforms)
 - [👨‍💻 Coding Challenge Platforms](#-coding-challenge-platforms)
+- [☣ Learn Hacking](#-learn-hacking)
 - [👨‍🎓 Freelancing platforms](#-freelancing-platforms)
 - [📌 List of websites to find remote jobs](#-list-of-websites-to-find-remote-jobs)
 - [🏞 Photos](#-photos)
@@ -124,6 +125,13 @@ Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This cou
 ### 🔹 Javatpoint
 Tutorials, Free Online Tutorials, Javatpoint provides tutorials and interview questions of all technology like java tutorial, android, java frameworks, javascript, ajax, core java, sql, python, php, c language etc. for beginners and professionals.
 **⩥ 🔗 [Javatpoint](https://www.javatpoint.com/)
+
+
+## ☣ Learn Hacking
+
+### 🔹 TryHackMe
+Learning cyber security on TryHackMe is fun and addictive. Earn points by answering questions, taking on challenges and maintain your hacking streak through short lessons.
+**⩥ 🔗 [TryHackMe](https://tryhackme.com)
 
 
 ## 👨‍💻 Coding Challenge Platforms:
