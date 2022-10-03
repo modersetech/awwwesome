@@ -95,11 +95,6 @@ Build 30 things with vanilla JS in 30 days with 30 tutorials
 
 **⩥ 🔗 [](http://javascript30.com)**
 
-### 🔹 Frontend Mentor | Front-end coding challenges using a real-life workflow
-Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working with professional designs.
-
-**⩥ 🔗 [Frontend Mentor](http://frontendmentor.io)**
-
 ### 🔹 Test Automation University | Applitools
 Become a test automation superstar - Free!🌟
 
@@ -120,6 +115,10 @@ SoloLearn apps provide you with the ability to choose what you will learn withou
 
 **⩥ 🔗 [Sololearn](http://sololearn.com)**
 
+### 🔹 Full Stack open 2022
+Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.
+
+**⩥ 🔗 [Full Stack open 2022](https://fullstackopen.com/en/)
 
 
 ## 👨‍💻 Coding Challenge Platforms:
@@ -175,6 +174,10 @@ The SPOJ platform is centered around an online judge system, which serves for th
 
 **⩥ 🔗 [SPOJ](http://spoj.com)**
 
+### 🔹 Frontend Mentor | Front-end coding challenges using a real-life workflow
+Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working with professional designs.
+
+**⩥ 🔗 [Frontend Mentor](http://frontendmentor.io)**
 
 
 ## 👨‍🎓 Freelancing platforms:
