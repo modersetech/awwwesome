@@ -121,6 +121,10 @@ Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This cou
 
 **⩥ 🔗 [Full Stack open 2022](https://fullstackopen.com/en/)
 
+### 🔹 Javatpoint
+Tutorials, Free Online Tutorials, Javatpoint provides tutorials and interview questions of all technology like java tutorial, android, java frameworks, javascript, ajax, core java, sql, python, php, c language etc. for beginners and professionals.
+**⩥ 🔗 [Javatpoint](https://www.javatpoint.com/)
+
 
 ## 👨‍💻 Coding Challenge Platforms:
 
@@ -611,7 +615,7 @@ Only the best mobile and web UI design inspiration, right in your inbox
 
 
 
-## 📔 Docs:
+## 📔 Web Documents:
 
 ### 🔹 W3Schools Free Online Web Tutorials
 W3Schools offers free online tutorials, references, and exercises in all the major languages on the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.
