@@ -78,7 +78,7 @@ Learn how to use GitLab Pages to deploy a static website at no additional cost.
 
 
 
-## 📕 Learning Platforms:
+## 📕 Coding Learning Platforms:
 
 ### 🔹 freeCodeCamp
 freeCodeCamp is a community of millions of people around the world who are learning to code together. You can learn to code with free online courses, programming projects, and interview preparation for developer jobs.
